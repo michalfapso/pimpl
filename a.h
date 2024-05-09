@@ -1,5 +1,6 @@
 #include <memory>
 #include <functional>
+#include <string>
 #include "pimpl.h"
 
 class A {
