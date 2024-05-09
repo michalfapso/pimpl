@@ -1,3 +1,5 @@
+![workflow](https://github.com/michalfapso/pimpl/actions/workflows/cmake-multi-platform.yml/badge.svg)
+
 A header-only simple Pimpl helper class for c++.
 
 Main objectives:
