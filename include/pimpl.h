@@ -5,6 +5,11 @@
 template<typename T>
 class PimplD {
     public:
+        template <typename S>
+        explicit PimplD(std::unique_ptr<S> p)
+            : mStorage{std::move(p)}
+        {}
+
         template <typename... Args>
         explicit PimplD(Args&&... args)
             : mStorage{std::make_unique<T>(std::forward<Args>(args)...)}
